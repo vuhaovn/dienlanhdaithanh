@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Điện Lạnh Đại Thành – Sửa Chữa & Lắp Đặt Máy Lạnh Chuyên Nghiệp TPHCM</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.png">
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Điện Lạnh Đại Thành – Dịch vụ sửa chữa, vệ sinh, lắp đặt máy lạnh chuyên nghiệp tại TPHCM. Thợ tay nghề cao, bảo hành uy tín, giá cả hợp lý. Hotline: 0938046550" />
+  <meta name="keywords" content="sửa máy lạnh TPHCM, vệ sinh máy lạnh, lắp đặt máy lạnh, bơm gas máy lạnh, sửa máy giặt, vệ sinh tủ lạnh, điện lạnh Bình Tân, thợ sửa máy lạnh, máy lạnh âm trần, Điện Lạnh Đại Thành" />
+  <meta name="author" content="Điện Lạnh Đại Thành" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://dienlanhdaithanh.com" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Điện Lạnh Đại Thành – Sửa Chữa & Lắp Đặt Máy Lạnh Chuyên Nghiệp" />
+  <meta property="og:description" content="Dịch vụ sửa chữa, vệ sinh, lắp đặt máy lạnh chuyên nghiệp tại TPHCM. Bảo hành uy tín, giá cả hợp lý." />
+  <meta property="og:url" content="https://dienlanhdaithanh.com" />
+  <meta property="og:locale" content="vi_VN" />
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Điện Lạnh Đại Thành",
+    "description": "Dịch vụ sửa chữa, vệ sinh, lắp đặt máy lạnh chuyên nghiệp tại TPHCM",
+    "url": "https://dienlanhdaithanh.com",
+    "telephone": "0938046550",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "85/17 Hồ Văn Long, Khu phố 57",
+      "addressLocality": "Phường Bình Tân",
+      "addressRegion": "Hồ Chí Minh",
+      "addressCountry": "VN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "10.7416",
+      "longitude": "106.6022"
+    },
+    "openingHours": "Mo-Su 07:00-21:00",
+    "priceRange": "$$",
+    "serviceArea": "Hồ Chí Minh"
+  }
+  </script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BNXDTLTLZY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BNXDTLTLZY');
+  </script>
+
+  <!-- Google Fonts - Vietnamese support -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              red: '#DC2626',
+              darkred: '#991B1B',
+              lightred: '#FEE2E2',
+            }
+          },
+          fontFamily: {
+            sans: ['"Be Vietnam Pro"', 'sans-serif'],
+            display: ['Oswald', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    * { box-sizing: border-box; }
+
+    /* ── Sticky Header ── */
+    #main-header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      transition: background 0.3s, box-shadow 0.3s;
+    }
+    #main-header.scrolled {
+      background: #fff !important;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.12);
+    }
+
+    /* ── AOS-like scroll animations ── */
+    [data-aos] {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+    [data-aos="fade-left"] { transform: translateX(-40px); }
+    [data-aos="fade-right"] { transform: translateX(40px); }
+    [data-aos="zoom-in"] { transform: scale(0.88); }
+    [data-aos].aos-animate {
+      opacity: 1 !important;
+      transform: none !important;
+    }
+
+    /* ── Hero diagonal clip ── */
+    .hero-clip { clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%); }
+
+    /* ── Service card hover ── */
+    .service-card {
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 40px rgba(220,38,38,0.18);
+    }
+
+    /* ── Red diagonal accent ── */
+    .section-title-bar::before {
+      content: '';
+      display: inline-block;
+      width: 5px; height: 100%;
+      background: #DC2626;
+      border-radius: 2px;
+      margin-right: 12px;
+      vertical-align: middle;
+    }
+
+    /* ── Price badge ── */
+    .price-pill {
+      background: linear-gradient(135deg, #DC2626, #991B1B);
+      color: #fff;
+      font-weight: 700;
+      border-radius: 999px;
+      padding: 2px 12px;
+      font-size: 0.82rem;
+      white-space: nowrap;
+    }
+
+    /* ── Mobile menu ── */
+    #mobile-menu { display: none; }
+    #mobile-menu.open { display: block; }
+
+    /* ── Pulse ring on CTA ── */
+    .pulse-btn {
+      position: relative;
+      overflow: visible;
+    }
+    .pulse-btn::after {
+      content: '';
+      position: absolute; inset: -4px;
+      border-radius: 9999px;
+      border: 2px solid #DC2626;
+      animation: pulse-ring 1.8s ease-out infinite;
+    }
+    @keyframes pulse-ring {
+      0%   { transform: scale(1); opacity: 0.8; }
+      100% { transform: scale(1.35); opacity: 0; }
+    }
+
+    /* ── Ticker tape ── */
+    .ticker-wrap { overflow: hidden; background: #DC2626; }
+    .ticker { display: flex; animation: ticker-scroll 28s linear infinite; white-space: nowrap; }
+    .ticker:hover { animation-play-state: paused; }
+    @keyframes ticker-scroll {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* ── Floating Zalo button ── */
+    .fab-zalo {
+      position: fixed; bottom: 24px; right: 24px; z-index: 2000;
+      width: 58px; height: 58px;
+      background: #0068FF;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 6px 20px rgba(0,104,255,0.5);
+      animation: fab-bounce 2.4s ease-in-out infinite;
+    }
+    @keyframes fab-bounce {
+      0%,100% { transform: translateY(0); }
+      50%      { transform: translateY(-8px); }
+    }
+
+    /* ── Floating Phone button ── */
+    .fab-phone {
+      position: fixed; bottom: 94px; right: 24px; z-index: 2000;
+      width: 58px; height: 58px;
+      background: #DC2626;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 6px 20px rgba(220,38,38,0.5);
+    }
+
+    /* strength strip */
+    .strength-icon {
+      width: 60px; height: 60px;
+      background: linear-gradient(135deg, #DC2626, #991B1B);
+      border-radius: 16px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+
+    /* map iframe */
+    .map-iframe { filter: grayscale(20%) contrast(1.05); }
+
+    /* diagonal bg */
+    .diag-bg {
+      background: linear-gradient(135deg, #111 0%, #1a1a1a 50%, #DC2626 100%);
+    }
+  </style>
+</head>
+
+<body class="font-sans bg-white text-gray-800 antialiased">
+
+<!-- ══════════════════════════════════════════════════
+     FLOATING BUTTONS
+══════════════════════════════════════════════════ -->
+<a href="https://zalo.me/0938046550" target="_blank" rel="noopener" class="fab-zalo" aria-label="Chat Zalo">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo" class="w-8 h-8" />
+</a>
+<a href="tel:0938046550" class="fab-phone" aria-label="Gọi điện">
+  <i class="fa-solid fa-phone text-white text-xl animate-pulse"></i>
+</a>
+
+<!-- ══════════════════════════════════════════════════
+     HEADER
+══════════════════════════════════════════════════ -->
+<header id="main-header" class="bg-white/90 backdrop-blur-sm">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+
+    <!-- Logo -->
+    <a href="#home" class="flex items-center gap-2 group" aria-label="Trang chủ Điện Lạnh Đại Thành">
+      <div class="w-10 h-10 bg-brand-red rounded-xl flex items-center justify-content-center shadow-md">
+        <img src="./images/logo.png" alt="Logo Điện Lạnh Đại Thành" />
+      </div>
+      <div class="leading-none">
+        <div class="text-[11px] font-semibold text-gray-500 tracking-widest uppercase">Điện Lạnh</div>
+        <div class="font-display font-700 text-xl text-gray-900 leading-none tracking-wide">ĐẠI THÀNH</div>
+      </div>
+    </a>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-gray-700" aria-label="Menu chính">
+      <a href="#home" class="hover:text-brand-red transition-colors">Trang Chủ</a>
+      <a href="#about" class="hover:text-brand-red transition-colors">Về Chúng Tôi</a>
+      <a href="#services" class="hover:text-brand-red transition-colors">Dịch Vụ</a>
+      <a href="#contact" class="hover:text-brand-red transition-colors">Liên Hệ</a>
+    </nav>
+
+    <!-- CTA + Hamburger -->
+    <div class="flex items-center gap-3">
+      <a href="tel:0938046550"
+         class="hidden sm:flex items-center gap-2 bg-brand-red hover:bg-brand-darkred text-white font-bold text-sm px-4 py-2 rounded-full shadow-md transition-all"
+         onclick="gtag('event','click',{event_category:'CTA',event_label:'header_call'})">
+        <i class="fa-solid fa-phone-volume text-base animate-pulse"></i>
+        <span>0938 046 550</span>
+      </a>
+      <!-- Mobile hamburger -->
+      <button id="menu-toggle" class="md:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-100 transition" aria-label="Mở menu">
+        <i class="fa-solid fa-bars text-xl"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden bg-white border-t border-gray-100 shadow-lg">
+    <nav class="flex flex-col px-5 py-4 gap-3 text-sm font-semibold text-gray-700">
+      <a href="#home" class="mobile-nav-link py-2 border-b border-gray-100 hover:text-brand-red transition-colors"><i class="fa-solid fa-house mr-2 text-brand-red"></i>Trang Chủ</a>
+      <a href="#about" class="mobile-nav-link py-2 border-b border-gray-100 hover:text-brand-red transition-colors"><i class="fa-solid fa-circle-info mr-2 text-brand-red"></i>Về Chúng Tôi</a>
+      <a href="#services" class="mobile-nav-link py-2 border-b border-gray-100 hover:text-brand-red transition-colors"><i class="fa-solid fa-screwdriver-wrench mr-2 text-brand-red"></i>Dịch Vụ</a>
+      <a href="#contact" class="mobile-nav-link py-2 hover:text-brand-red transition-colors"><i class="fa-solid fa-location-dot mr-2 text-brand-red"></i>Liên Hệ</a>
+      <a href="tel:0938046550" class="flex items-center justify-center gap-2 bg-brand-red text-white font-bold py-3 rounded-full mt-1">
+        <i class="fa-solid fa-phone-volume"></i> Gọi Ngay: 0938 046 550
+      </a>
+    </nav>
+  </div>
+</header>
+
+<!-- ══════════════════════════════════════════════════
+     TICKER TAPE
+══════════════════════════════════════════════════ -->
+<div class="ticker-wrap mt-16 py-2" role="marquee" aria-label="Thông báo">
+  <div class="ticker text-white text-xs font-semibold tracking-wide">
+    <span class="px-6">⚡ Vệ sinh máy lạnh chỉ từ 180.000đ</span>
+    <span class="px-6">❄️ Bơm gas máy lạnh từ 250.000đ</span>
+    <span class="px-6">🔧 Tháo lắp máy lạnh 650.000đ</span>
+    <span class="px-6">🏠 Phục vụ nội thành TP.HCM</span>
+    <span class="px-6">✅ Bảo hành 7 ngày sau vệ sinh</span>
+    <span class="px-6">📞 Hotline: 0938 046 550</span>
+    <span class="px-6">⚡ Vệ sinh máy lạnh chỉ từ 180.000đ</span>
+    <span class="px-6">❄️ Bơm gas máy lạnh từ 250.000đ</span>
+    <span class="px-6">🔧 Tháo lắp máy lạnh 650.000đ</span>
+    <span class="px-6">🏠 Phục vụ nội thành TP.HCM</span>
+    <span class="px-6">✅ Bảo hành 7 ngày sau vệ sinh</span>
+    <span class="px-6">📞 Hotline: 0938 046 550</span>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════
+     HERO / MAIN SECTION
+══════════════════════════════════════════════════ -->
+<section id="home" class="hero-clip diag-bg relative overflow-hidden pb-24 pt-10" aria-label="Trang chủ">
+  <!-- Background pattern -->
+  <div class="absolute inset-0 opacity-5" style="background-image:repeating-linear-gradient(45deg,#fff 0,#fff 1px,transparent 0,transparent 50%);background-size:20px 20px;"></div>
+
+  <!-- Decorative snowflakes -->
+  <div class="absolute top-12 right-8 text-white/10 text-8xl select-none pointer-events-none" aria-hidden="true">
+    <i class="fa-solid fa-snowflake"></i>
+  </div>
+  <div class="absolute bottom-24 left-6 text-white/5 text-6xl select-none pointer-events-none" aria-hidden="true">
+    <i class="fa-solid fa-snowflake"></i>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 pt-8 pb-4">
+    <div class="flex flex-col md:flex-row items-center gap-10">
+
+      <!-- Text -->
+      <div class="flex-1 text-center md:text-left" data-aos>
+        <div class="inline-flex items-center gap-2 bg-white/10 text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-5 border border-white/20">
+          <i class="fa-solid fa-shield-halved text-yellow-400"></i>
+          Uy tín · Nhanh chóng · Bảo hành tận tâm
+        </div>
+        <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
+          CHUYÊN GIA<br/>
+          <span class="text-brand-red drop-shadow-[0_2px_12px_rgba(220,38,38,0.8)]">ĐIỆN LẠNH</span><br/>
+          TẠI NHÀ BẠN
+        </h1>
+        <p class="text-white/80 text-base sm:text-lg leading-relaxed mb-8 max-w-lg mx-auto md:mx-0">
+          Dịch vụ vệ sinh, sửa chữa, lắp đặt máy lạnh <strong class="text-white">chuyên nghiệp</strong> tại TP.HCM.
+          Thợ tay nghề cao, bảo hành rõ ràng – có mặt trong <strong class="text-yellow-300">60 phút</strong>.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
+          <a href="https://zalo.me/0938046550" target="_blank" rel="noopener"
+             class="pulse-btn inline-flex items-center justify-center gap-2 bg-brand-red hover:bg-brand-darkred text-white font-bold text-base px-8 py-4 rounded-full shadow-2xl transition-all"
+             onclick="gtag('event','click',{event_category:'CTA',event_label:'hero_zalo'})">
+            <i class="fa-solid fa-calendar-check"></i>
+            Đặt Lịch Ngay Qua Zalo
+          </a>
+          <a href="tel:0938046550"
+             class="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-semibold text-base px-7 py-4 rounded-full transition-all">
+            <i class="fa-solid fa-phone"></i>
+            Gọi Ngay
+          </a>
+        </div>
+        <!-- Stats row -->
+        <div class="mt-10 flex justify-center md:justify-start gap-8 border-t border-white/20 pt-8">
+          <div class="text-center">
+            <div class="font-display text-3xl font-bold text-white">5+</div>
+            <div class="text-white/60 text-xs mt-0.5">Năm kinh nghiệm</div>
+          </div>
+          <div class="w-px bg-white/20"></div>
+          <div class="text-center">
+            <div class="font-display text-3xl font-bold text-white">1K+</div>
+            <div class="text-white/60 text-xs mt-0.5">Khách hàng</div>
+          </div>
+          <div class="w-px bg-white/20"></div>
+          <div class="text-center">
+            <div class="font-display text-3xl font-bold text-white">14</div>
+            <div class="text-white/60 text-xs mt-0.5">Dịch vụ</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Illustration -->
+      <div class="flex-1 flex justify-center" data-aos="zoom-in">
+        <div class="relative w-72 h-72 sm:w-80 sm:h-80">
+          <div class="absolute inset-0 bg-brand-red/30 rounded-full blur-3xl"></div>
+          <div class="relative w-full h-full bg-white/5 border border-white/20 rounded-3xl flex flex-col items-center justify-center gap-4 backdrop-blur-sm shadow-2xl p-6">
+            <div class="w-20 h-20 bg-brand-red rounded-2xl flex items-center justify-center shadow-xl mb-2">
+              <i class="fa-solid fa-snowflake text-white text-4xl"></i>
+            </div>
+            <div class="text-white font-display text-xl font-semibold tracking-wide text-center">Máy Lạnh Sạch</div>
+            <div class="text-white/70 text-sm text-center">Tiết kiệm điện · Mát hơn · Bền hơn</div>
+            <div class="flex gap-2 mt-2">
+              <span class="bg-green-400/20 text-green-300 text-xs px-3 py-1 rounded-full border border-green-400/30">✓ Bảo hành 7 ngày</span>
+            </div>
+            <!-- Cold air lines -->
+            <div class="flex gap-1.5 mt-1">
+              <div class="w-8 h-0.5 bg-blue-300/60 rounded-full"></div>
+              <div class="w-12 h-0.5 bg-blue-300/40 rounded-full"></div>
+              <div class="w-6 h-0.5 bg-blue-300/60 rounded-full"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     ABOUT US SECTION
+══════════════════════════════════════════════════ -->
+<section id="about" class="py-20 bg-white relative overflow-hidden" aria-label="Về chúng tôi">
+  <div class="absolute top-0 right-0 w-64 h-64 bg-brand-lightred rounded-full -translate-y-1/2 translate-x-1/2 opacity-40 pointer-events-none"></div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-14" data-aos>
+      <span class="inline-block bg-brand-lightred text-brand-red font-semibold text-xs px-4 py-1.5 rounded-full mb-3 tracking-widest uppercase">Về Chúng Tôi</span>
+      <h2 class="font-display text-3xl sm:text-4xl font-bold text-gray-900">
+        TẠI SAO CHỌN <span class="text-brand-red">ĐIỆN LẠNH ĐẠI THÀNH</span>?
+      </h2>
+      <p class="text-gray-500 mt-3 max-w-2xl mx-auto">Chúng tôi không chỉ sửa máy – chúng tôi mang lại sự thoải mái và an tâm cho gia đình bạn.</p>
+    </div>
+
+    <!-- Strengths grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <div class="flex gap-4 p-6 bg-gray-50 hover:bg-brand-lightred rounded-2xl transition-colors group" data-aos>
+        <div class="strength-icon"><i class="fa-solid fa-user-tie text-white text-2xl"></i></div>
+        <div>
+          <h3 class="font-bold text-gray-900 text-base mb-1 group-hover:text-brand-red transition-colors">Thợ Tay Nghề Cao</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Đội ngũ kỹ thuật viên được đào tạo bài bản, giàu kinh nghiệm xử lý mọi dòng máy lạnh, máy giặt, tủ lạnh.</p>
+        </div>
+      </div>
+
+      <div class="flex gap-4 p-6 bg-gray-50 hover:bg-brand-lightred rounded-2xl transition-colors group" data-aos>
+        <div class="strength-icon"><i class="fa-solid fa-shield-halved text-white text-2xl"></i></div>
+        <div>
+          <h3 class="font-bold text-gray-900 text-base mb-1 group-hover:text-brand-red transition-colors">Uy Tín – Bảo Hành Rõ Ràng</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Bảo hành 7 ngày sau mỗi lần vệ sinh. Cam kết hoàn tiền nếu không hài lòng về chất lượng dịch vụ.</p>
+        </div>
+      </div>
+
+      <div class="flex gap-4 p-6 bg-gray-50 hover:bg-brand-lightred rounded-2xl transition-colors group" data-aos>
+        <div class="strength-icon"><i class="fa-solid fa-bolt text-white text-2xl"></i></div>
+        <div>
+          <h3 class="font-bold text-gray-900 text-base mb-1 group-hover:text-brand-red transition-colors">Phục Vụ Nhanh Chóng</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Có mặt trong 60 phút kể từ khi nhận lịch hẹn. Hỗ trợ đặt lịch 7 ngày/tuần qua Zalo hoặc điện thoại.</p>
+        </div>
+      </div>
+
+      <div class="flex gap-4 p-6 bg-gray-50 hover:bg-brand-lightred rounded-2xl transition-colors group" data-aos>
+        <div class="strength-icon"><i class="fa-solid fa-tags text-white text-2xl"></i></div>
+        <div>
+          <h3 class="font-bold text-gray-900 text-base mb-1 group-hover:text-brand-red transition-colors">Giá Cả Minh Bạch</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Báo giá chi tiết trước khi làm. Không phát sinh chi phí ẩn. Giá đi đôi với chất lượng thực sự.</p>
+        </div>
+      </div>
+
+      <div class="flex gap-4 p-6 bg-gray-50 hover:bg-brand-lightred rounded-2xl transition-colors group" data-aos>
+        <div class="strength-icon"><i class="fa-solid fa-tools text-white text-2xl"></i></div>
+        <div>
+          <h3 class="font-bold text-gray-900 text-base mb-1 group-hover:text-brand-red transition-colors">Đa Dạng Thiết Bị</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Máy lạnh, máy giặt, tủ lạnh, máy sấy, sofa, nệm, thảm, rèm – một cuộc gọi giải quyết tất cả.</p>
+        </div>
+      </div>
+
+      <div class="flex gap-4 p-6 bg-gray-50 hover:bg-brand-lightred rounded-2xl transition-colors group" data-aos>
+        <div class="strength-icon"><i class="fa-solid fa-handshake text-white text-2xl"></i></div>
+        <div>
+          <h3 class="font-bold text-gray-900 text-base mb-1 group-hover:text-brand-red transition-colors">Phục Vụ Tận Tâm</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Tư vấn miễn phí trước và sau khi sửa. Hỗ trợ 24/7 qua Zalo. Luôn đặt sự hài lòng của khách lên hàng đầu.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CTA Banner -->
+    <div class="mt-12 bg-gradient-to-r from-gray-900 to-brand-darkred rounded-3xl p-8 flex flex-col sm:flex-row items-center justify-between gap-6" data-aos>
+      <div>
+        <div class="text-white font-display text-2xl font-bold">Liên hệ ngay hôm nay!</div>
+        <div class="text-white/70 text-sm mt-1">Nhận tư vấn miễn phí và ưu đãi đặc biệt cho lần đầu sử dụng dịch vụ.</div>
+      </div>
+      <a href="https://zalo.me/0938046550" target="_blank" rel="noopener"
+         class="flex-shrink-0 inline-flex items-center gap-2 bg-brand-red hover:bg-white hover:text-brand-red text-white font-bold px-7 py-3.5 rounded-full transition-all shadow-lg"
+         onclick="gtag('event','click',{event_category:'CTA',event_label:'about_zalo'})">
+        <i class="fa-solid fa-paper-plane"></i> Chat Zalo
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     SERVICES SECTION
+══════════════════════════════════════════════════ -->
+<section id="services" class="py-20 bg-gray-50 relative" aria-label="Bảng giá dịch vụ">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-14" data-aos>
+      <span class="inline-block bg-brand-lightred text-brand-red font-semibold text-xs px-4 py-1.5 rounded-full mb-3 tracking-widest uppercase">Dịch Vụ</span>
+      <h2 class="font-display text-3xl sm:text-4xl font-bold text-gray-900">BẢNG GIÁ DỊCH VỤ</h2>
+      <p class="text-gray-500 mt-3 max-w-xl mx-auto">Giá niêm yết rõ ràng – không phát sinh. Báo giá chi tiết trước khi thi công.</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- 1. Máy Lạnh -->
+      <article class="service-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden" data-aos>
+        <div class="bg-gradient-to-r from-brand-red to-brand-darkred p-5 flex items-center gap-3">
+          <div class="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center">
+            <i class="fa-solid fa-wind text-white text-xl"></i>
+          </div>
+          <div>
+            <h3 class="text-white font-bold text-base leading-tight">Máy Lạnh</h3>
+            <p class="text-white/70 text-xs">Vệ sinh cục nóng/cục lạnh</p>
+          </div>
+          <span class="ml-auto bg-white/20 text-white text-xs px-2.5 py-0.5 rounded-full border border-white/30">BH 7 ngày</span>
+        </div>
+        <div class="p-5 space-y-3 text-sm">
+          <div class="flex justify-between items-center py-1.5 border-b border-gray-50">
+            <span class="text-gray-600">Vệ sinh 1 máy</span>
+            <span class="price-pill">180.000đ</span>
+          </div>
+          <div class="flex justify-between items-center py-1.5 border-b border-gray-50">
+            <span class="text-gray-600">Từ 2 máy trở lên</span>
+            <span class="price-pill">150.000đ/máy</span>
+          </div>
+          <div class="flex justify-between items-center py-1.5 border-b border-gray-50">
+            <span class="text-gray-600">Phí tháo lắp</span>
+            <span class="price-pill">650.000đ</span>
+          </div>
+          <div class="flex justify-between items-center py-1.5 border-b border-gray-50">
+            <span class="text-gray-600">Bơm gas</span>
+            <span class="price-pill">250K – 550K</span>
+          </div>
+          <div class="flex justify-between items-center py-1.5">
+            <span class="text-gray-600">Kiểm tra sửa chữa</span>
+            <span class="price-pill">100.000đ</span>
+          </div>
+          <p class="text-gray-400 text-xs italic pt-1">*Phí tháo lắp không bao gồm vật tư</p>
+        </div>
+      </article>
+
+      <!-- 2. Máy Lạnh Âm Trần -->
+      <article class="service-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden" data-aos>
+        <div class="bg-gradient-to-r from-gray-800 to-gray-900 p-5 flex items-center gap-3">
+          <div class="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center">
+            <i class="fa-solid fa-temperature-low text-white text-xl"></i>
+          </div>
+          <div>
+            <h3 class="text-white font-bold text-base leading-tight">Máy Lạnh Âm Trần</h3>
+            <p class="text-white/70 text-xs">Vệ sinh chuyên dụng</p>
+          </div>
+        </div>
+        <div class="p-5 space-y-3 text-sm">
+          <div class="flex justify-between items-center py-1.5 border-b border-gray-50">
+            <span class="text-gray-600">Giá vệ sinh</span>
+            <span class="price-pill">550.000đ/Bộ</span>
+          </div>
+          <div class="mt-3 p-3 bg-gray-50 rounded-xl">
+            <p class="text-gray-500 text-xs font-semibold mb-2 uppercase tracking-wide">Âm trần cắt không đúng trung tâm:</p>
+            <div class="flex justify-between items-center py-1">
+              <span class="text-gray-600 text-xs">Vệ sinh lưới gió</span>
+              <span class="price-pill">80.000đ/Miếng</span>
+            </div>
+            <div class="flex justify-between items-center py-1">
+              <span class="text-gray-600 text-xs">Cục nóng</span>
+              <span class="price-pill">350.000đ</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3. Máy Giặt -->
+      <article class="service-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden" data-aos>
+        <div class="bg-gradient-to-r from-blue-700 to-blue-900 p-5 flex items-center gap-3">
+          <div class="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center">
+            <i class="fa-solid fa-shirt text-white text-xl"></i>
+          </div>
+          <div>
+            <h3 class="text-white font-bold text-base leading-tight">Máy Giặt</h3>
+            <p class="text-white/70 text-xs">Vệ sinh sạch sẽ toàn bộ</p>
+          </div>
+        </div>
+        <div class="p-5 space-y-3 text-sm">
+          <div class="flex justify-between items-center py-1.5 border-b border-gray-50">
+            <span class="text-gray-600">Lồng đứng</span>
+            <span class="price-pill">350.000đ</span>
+          </div>
+          <div class="flex justify-between items-center py-1.5 border-b border-gray-50">
+            <span class="text-gray-600">Lồng ngang</span>
+            <span class="price-pill">550.000đ</span>
+          </div>
+          <div class="flex justify-between items-center py-1.5 border-b border-gray-50">
+            <span class="text-gray-600">Lồng ngang + sấy</span>
+            <span class="price-pill">700.000đ</span>
+          </div>
+          <div class="flex justify-between items-center py-1.5">
+            <span class="text-gray-600">Máy giặt nội địa</span>
+            <span class="price-pill">800.000đ</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 4. Máy Sấy + Máy Rửa Chén + Tủ Lạnh -->
+      <article class="service-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden" data-aos>
+        <div class="bg-gradient-to-r from-orange-500 to-orange-700 p-5 flex items-center gap-3">
+          <div class="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center">
+            <i class="fa-solid fa-fire-burner text-white text-xl"></i>
+          </div>
+          <div>
+            <h3 class="text-white font-bold text-base leading-tight">Máy Sấy & Gia Dụng</h3>
+            <p class="text-white/70 text-xs">Sấy quần áo, rửa chén, tủ lạnh</p>
+          </div>
+        </div>
+        <div class="p-5 space-y-3 text-sm">
+          <div class="flex justify-between items-center py-1.5 border-b border-gray-50">
+            <span class="text-gray-600">Máy sấy quần áo</span>
+            <span class="price-pill">200.000đ/Máy</span>
+          </div>
+          <div class="flex justify-between items-center py-1.5">
+            <span class="text-gray-600">Tủ lạnh (làm sạch, khử khuẩn)</span>
+            <span class="price-pill">300.000đ/Máy</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 5. Sofa -->
+      <article class="service-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden" data-aos>
+        <div class="bg-gradient-to-r from-amber-600 to-amber-800 p-5 flex items-center gap-3">
+          <div class="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center">
+            <i class="fa-solid fa-couch text-white text-xl"></i>
+          </div>
+          <div>
+            <h3 class="text-white font-bold text-base leading-tight">Sofa</h3>
+            <p class="text-white/70 text-xs">Vải nỉ/nhung và da</p>
+          </div>
+        </div>
+        <div class="p-5 space-y-3 text-sm">
+          <p class="text-xs font-semibold text-gray-400 uppercase tracking-wide">Sofa Vải Nỉ/Nhung</p>
+          <div class="flex justify-between items-center py-1 border-b border-gray-50">
+            <span class="text-gray-600">Hút khô</span>
+            <span class="price-pill">200K – 300K</span>
+          </div>
+          <div class="flex justify-between items-center py-1 border-b border-gray-50">
+            <span class="text-gray-600">Giặt ướt</span>
+            <span class="price-pill">350K – 550K</span>
+          </div>
+          <p class="text-xs font-semibold text-gray-400 uppercase tracking-wide pt-2">Sofa Da (Đánh bóng dưỡng da)</p>
+          <div class="flex justify-between items-center py-1">
+            <span class="text-gray-600">Đánh bóng, dưỡng da</span>
+            <span class="price-pill">350K – 550K</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 6. Nệm Ngủ -->
+      <article class="service-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden" data-aos>
+        <div class="bg-gradient-to-r from-purple-600 to-purple-900 p-5 flex items-center gap-3">
+          <div class="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center">
+            <i class="fa-solid fa-bed text-white text-xl"></i>
+          </div>
+          <div>
+            <h3 class="text-white font-bold text-base leading-tight">Nệm Ngủ</h3>
+            <p class="text-white/70 text-xs">Bông / Lò xo / Cao su</p>
+          </div>
+        </div>
+        <div class="p-5 space-y-3 text-sm">
+          <p class="text-xs font-semibold text-gray-400 uppercase tracking-wide">Hút khô</p>
+          <div class="flex justify-between py-1 border-b border-gray-50">
+            <span class="text-gray-600">m2 – m4</span>
+            <span class="price-pill">150.000đ</span>
+          </div>
+          <div class="flex justify-between py-1 border-b border-gray-50">
+            <span class="text-gray-600">m6 – m8</span>
+            <span class="price-pill">250.000đ</span>
+          </div>
+          <p class="text-xs font-semibold text-gray-400 uppercase tracking-wide pt-2">Giặt ướt</p>
+          <div class="flex justify-between py-1 border-b border-gray-50">
+            <span class="text-gray-600">m2 – m4</span>
+            <span class="price-pill">250.000đ</span>
+          </div>
+          <div class="flex justify-between py-1">
+            <span class="text-gray-600">m6 – m8</span>
+            <span class="price-pill">350.000đ</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 7. Thảm -->
+      <article class="service-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden" data-aos>
+        <div class="bg-gradient-to-r from-teal-600 to-teal-800 p-5 flex items-center gap-3">
+          <div class="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center">
+            <i class="fa-solid fa-border-top-left text-white text-xl"></i>
+          </div>
+          <div>
+            <h3 class="text-white font-bold text-base leading-tight">Thảm</h3>
+            <p class="text-white/70 text-xs">Văn phòng & trang trí</p>
+          </div>
+        </div>
+        <div class="p-5 space-y-3 text-sm">
+          <div class="flex justify-between items-center py-1.5 border-b border-gray-50">
+            <span class="text-gray-600">Thảm văn phòng (giặt ướt)</span>
+            <span class="price-pill">50.000đ/m²</span>
+          </div>
+          <div class="flex justify-between items-center py-1.5 border-b border-gray-50">
+            <span class="text-gray-600">Thảm trang trí (giặt ướt)</span>
+            <span class="price-pill">150.000đ/m²</span>
+          </div>
+          <div class="flex justify-between items-center py-1.5">
+            <span class="text-gray-600">Thảm trang trí (hút khô)</span>
+            <span class="price-pill">50.000đ/m²</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 8. Rèm Cửa -->
+      <article class="service-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden" data-aos>
+        <div class="bg-gradient-to-r from-pink-600 to-rose-800 p-5 flex items-center gap-3">
+          <div class="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center">
+            <i class="fa-solid fa-archway text-white text-xl"></i>
+          </div>
+          <div>
+            <h3 class="text-white font-bold text-base leading-tight">Rèm Cửa</h3>
+            <p class="text-white/70 text-xs">Giặt sạch, tháo lắp tận nơi</p>
+          </div>
+        </div>
+        <div class="p-5 text-sm">
+          <div class="flex justify-between items-center py-1.5">
+            <span class="text-gray-600">Giặt rèm cửa</span>
+            <span class="price-pill">200K – 400K/Bộ</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 9. Khử Khuẩn + Tổng Vệ Sinh -->
+      <article class="service-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden" data-aos>
+        <div class="bg-gradient-to-r from-emerald-600 to-emerald-900 p-5 flex items-center gap-3">
+          <div class="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center">
+            <i class="fa-solid fa-spray-can-sparkles text-white text-xl"></i>
+          </div>
+          <div>
+            <h3 class="text-white font-bold text-base leading-tight">Vệ Sinh Chuyên Sâu</h3>
+            <p class="text-white/70 text-xs">Khử khuẩn & tổng vệ sinh</p>
+          </div>
+        </div>
+        <div class="p-5 space-y-3 text-sm">
+          <div class="flex justify-between items-center py-1.5 border-b border-gray-50">
+            <span class="text-gray-600">Khử khuẩn phòng</span>
+            <span class="price-pill">Tính theo m²</span>
+          </div>
+          <div class="flex justify-between items-center py-1.5">
+            <span class="text-gray-600">Tổng vệ sinh căn hộ / nhà phố</span>
+            <span class="price-pill">Liên hệ báo giá</span>
+          </div>
+          <div class="mt-3 p-3 bg-emerald-50 rounded-xl text-emerald-700 text-xs">
+            <i class="fa-solid fa-circle-check mr-1"></i>
+            Dùng hóa chất an toàn, đạt chuẩn y tế. Thích hợp gia đình có trẻ nhỏ.
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Bottom note -->
+    <p class="text-center text-gray-400 text-sm mt-8" data-aos>
+      <i class="fa-solid fa-circle-info text-brand-red mr-1"></i>
+      Giá trên chưa bao gồm VAT. Liên hệ để được tư vấn và báo giá chi tiết miễn phí.
+    </p>
+
+    <!-- CTA -->
+    <div class="text-center mt-8" data-aos>
+      <a href="https://zalo.me/0938046550" target="_blank" rel="noopener"
+         class="inline-flex items-center gap-2 bg-brand-red hover:bg-brand-darkred text-white font-bold text-base px-10 py-4 rounded-full shadow-lg transition-all"
+         onclick="gtag('event','click',{event_category:'CTA',event_label:'service_zalo'})">
+        <i class="fa-solid fa-calendar-check"></i>
+        Đặt Lịch Dịch Vụ Ngay
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     CONTACT SECTION
+══════════════════════════════════════════════════ -->
+<section id="contact" class="py-20 bg-white" aria-label="Liên hệ">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-12" data-aos>
+      <span class="inline-block bg-brand-lightred text-brand-red font-semibold text-xs px-4 py-1.5 rounded-full mb-3 tracking-widest uppercase">Liên Hệ</span>
+      <h2 class="font-display text-3xl sm:text-4xl font-bold text-gray-900">TÌM CHÚNG TÔI</h2>
+      <p class="text-gray-500 mt-3">Phục vụ nội thành TP.HCM (trừ quận <span class="text-red-500">Thủ Đức</span> và <span class="text-red-500">quận 9</span>)</p>
+    </div>
+
+    <!-- Map full width -->
+    <div class="w-full rounded-3xl overflow-hidden shadow-xl mb-10 border border-gray-100" data-aos style="height:360px;">
+      <iframe
+        class="map-iframe w-full h-full"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Bản đồ Điện Lạnh Đại Thành – 85/17 Hồ Văn Long, Bình Tân"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d244.97893945263007!2d106.58865392183542!3d10.760432112702556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1778420810341!5m2!1sen!2s"
+      ></iframe>
+    </div>
+
+    <!-- Contact info + Facebook -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      <!-- Facebook fanpage LEFT -->
+      <div class="flex flex-col gap-4" data-aos="fade-right">
+        <h3 class="font-display text-xl font-bold text-gray-900 flex items-center gap-2">
+          <i class="fa-brands fa-facebook text-blue-600 text-2xl"></i>
+          Fanpage Facebook
+        </h3>
+        <div class="rounded-2xl overflow-hidden shadow-md border border-gray-100 bg-gray-50 flex flex-col items-center justify-center p-6 gap-4">
+          <div class="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center shadow-md">
+            <i class="fa-brands fa-facebook-f text-white text-3xl"></i>
+          </div>
+          <div class="text-center">
+            <div class="font-bold text-gray-900 text-lg">Điện Lạnh Đại Thành</div>
+            <div class="text-gray-500 text-sm mt-1">Theo dõi để nhận ưu đãi và tin tức mới nhất</div>
+          </div>
+          <a href="https://facebook.com/profile.php?id=61589675902626" target="_blank" rel="noopener"
+             class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-full transition-all shadow"
+             onclick="gtag('event','click',{event_category:'Social',event_label:'facebook_fanpage'})">
+            <i class="fa-brands fa-facebook-f"></i>
+            Xem Fanpage
+          </a>
+          <div class="w-full border-t border-gray-200 pt-4 text-center">
+            <p class="text-gray-500 text-xs">
+              <i class="fa-solid fa-comment-dots text-blue-500 mr-1"></i>
+              Nhắn tin fanpage để được tư vấn và đặt lịch nhanh nhất
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact info RIGHT -->
+      <div class="flex flex-col gap-5" data-aos="fade-left">
+        <h3 class="font-display text-xl font-bold text-gray-900 flex items-center gap-2">
+          <i class="fa-solid fa-address-card text-brand-red text-xl"></i>
+          Thông Tin Liên Hệ
+        </h3>
+
+        <a href="tel:0938046550"
+           class="flex items-center gap-4 p-4 bg-brand-lightred hover:bg-brand-red group rounded-2xl transition-all"
+           onclick="gtag('event','click',{event_category:'Contact',event_label:'phone'})">
+          <div class="w-12 h-12 bg-brand-red group-hover:bg-white rounded-xl flex items-center justify-center flex-shrink-0 shadow">
+            <i class="fa-solid fa-phone-volume text-white group-hover:text-brand-red text-xl transition-colors"></i>
+          </div>
+          <div>
+            <div class="text-xs text-brand-red group-hover:text-white/70 font-semibold uppercase tracking-wider transition-colors">Hotline</div>
+            <div class="text-gray-900 group-hover:text-white font-bold text-xl transition-colors">0938 046 550</div>
+          </div>
+        </a>
+
+        <a href="https://zalo.me/0938046550" target="_blank" rel="noopener"
+           class="flex items-center gap-4 p-4 bg-blue-50 hover:bg-blue-600 group rounded-2xl transition-all"
+           onclick="gtag('event','click',{event_category:'Contact',event_label:'zalo'})">
+          <div class="w-12 h-12 bg-blue-500 group-hover:bg-white rounded-xl flex items-center justify-center flex-shrink-0 shadow">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo" class="w-7 h-7" />
+          </div>
+          <div>
+            <div class="text-xs text-blue-500 group-hover:text-white/80 font-semibold uppercase tracking-wider transition-colors">Zalo</div>
+            <div class="text-gray-900 group-hover:text-white font-bold text-xl transition-colors">0938 046 550</div>
+          </div>
+        </a>
+
+        <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-2xl">
+          <div class="w-12 h-12 bg-gray-200 rounded-xl flex items-center justify-center flex-shrink-0">
+            <i class="fa-solid fa-location-dot text-gray-600 text-xl"></i>
+          </div>
+          <div>
+            <div class="text-xs text-gray-500 font-semibold uppercase tracking-wider mb-0.5">Địa chỉ</div>
+            <div class="text-gray-800 font-semibold text-sm leading-relaxed">
+              85/17 Hồ Văn Long, Khu phố 57,<br/>Phường Bình Tân, TP.HCM
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-2xl">
+          <div class="w-12 h-12 bg-gray-200 rounded-xl flex items-center justify-center flex-shrink-0">
+            <i class="fa-solid fa-map-marked-alt text-gray-600 text-xl"></i>
+          </div>
+          <div>
+            <div class="text-xs text-gray-500 font-semibold uppercase tracking-wider mb-0.5">Khu vực phục vụ</div>
+            <div class="text-gray-800 font-semibold text-sm leading-relaxed">
+              Nội thành Hồ Chí Minh<br/>
+              <span class="text-brand-red text-xs">(Trừ quận Thủ Đức và quận 9)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-2xl">
+          <div class="w-12 h-12 bg-gray-200 rounded-xl flex items-center justify-center flex-shrink-0">
+            <i class="fa-solid fa-clock text-gray-600 text-xl"></i>
+          </div>
+          <div>
+            <div class="text-xs text-gray-500 font-semibold uppercase tracking-wider mb-0.5">Giờ làm việc</div>
+            <div class="text-gray-800 font-semibold text-sm">
+              Thứ Hai – Chủ Nhật: <span class="text-brand-red">7:00 – 21:00</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════════════ -->
+<footer class="bg-gray-950 text-white pt-14 pb-8" aria-label="Footer">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
+
+      <!-- Brand -->
+      <div class="lg:col-span-2">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-12 h-12 bg-brand-red rounded-xl flex items-center justify-center shadow-lg">
+            <img src="./images/logo.png" alt="Điện Lạnh Đại Thành">
+          </div>
+          <div>
+            <div class="text-xs font-semibold text-gray-400 tracking-widest uppercase">Điện Lạnh</div>
+            <div class="font-display text-2xl font-bold tracking-wide">ĐẠI THÀNH</div>
+          </div>
+        </div>
+        <p class="text-gray-400 text-sm leading-relaxed max-w-xs mb-5">
+          Chuyên sửa chữa, vệ sinh và lắp đặt máy lạnh, máy giặt, tủ lạnh và các thiết bị gia dụng tại TP.HCM. Uy tín – Nhanh chóng – Bảo hành rõ ràng.
+        </p>
+        <div class="flex gap-3">
+          <a href="https://facebook.com/profile.php?id=61589675902626" target="_blank" rel="noopener"
+             class="w-9 h-9 bg-white/10 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-colors" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f text-sm"></i>
+          </a>
+          <a href="https://zalo.me/0938046550" target="_blank" rel="noopener"
+             class="w-9 h-9 bg-white/10 hover:bg-blue-500 rounded-lg flex items-center justify-center transition-colors" aria-label="Zalo">
+            <span class="text-xs font-bold">Z</span>
+          </a>
+          <a href="tel:0938046550"
+             class="w-9 h-9 bg-white/10 hover:bg-brand-red rounded-lg flex items-center justify-center transition-colors" aria-label="Phone">
+            <i class="fa-solid fa-phone text-sm"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick links -->
+      <div>
+        <h4 class="font-display font-semibold text-sm uppercase tracking-widest text-gray-400 mb-4">Điều Hướng</h4>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="#home" class="text-gray-400 hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-brand-red text-xs"></i>Trang Chủ</a></li>
+          <li><a href="#about" class="text-gray-400 hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-brand-red text-xs"></i>Về Chúng Tôi</a></li>
+          <li><a href="#services" class="text-gray-400 hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-brand-red text-xs"></i>Dịch Vụ & Bảng Giá</a></li>
+          <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-brand-red text-xs"></i>Liên Hệ</a></li>
+        </ul>
+      </div>
+
+      <!-- Services list -->
+      <div>
+        <h4 class="font-display font-semibold text-sm uppercase tracking-widest text-gray-400 mb-4">Dịch Vụ Chính</h4>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li class="flex items-center gap-2"><i class="fa-solid fa-wind text-brand-red text-xs"></i>Vệ sinh máy lạnh</li>
+          <li class="flex items-center gap-2"><i class="fa-solid fa-wind text-brand-red text-xs"></i>Sửa chữa máy lạnh</li>
+          <li class="flex items-center gap-2"><i class="fa-solid fa-wind text-brand-red text-xs"></i>Bơm gas máy lạnh</li>
+          <li class="flex items-center gap-2"><i class="fa-solid fa-shirt text-brand-red text-xs"></i>Vệ sinh máy giặt</li>
+          <li class="flex items-center gap-2"><i class="fa-solid fa-snowflake text-brand-red text-xs"></i>Vệ sinh tủ lạnh</li>
+          <li class="flex items-center gap-2"><i class="fa-solid fa-couch text-brand-red text-xs"></i>Giặt sofa, nệm, thảm</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="border-t border-white/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-gray-500">
+      <p>© 2025 Điện Lạnh Đại Thành. Thiết kế tại TP.HCM.</p>
+      <p>
+        <i class="fa-solid fa-location-dot text-brand-red mr-1"></i>
+        85/17 Hồ Văn Long, Bình Tân, TP.HCM
+        &nbsp;·&nbsp;
+        <a href="tel:0938046550" class="hover:text-white transition-colors">0938 046 550</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- ══════════════════════════════════════════════════
+     JAVASCRIPT
+══════════════════════════════════════════════════ -->
+<script>
+// ── Sticky Header ──────────────────────────────
+const header = document.getElementById('main-header');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 60) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+}, { passive: true });
+
+// ── Mobile menu toggle ─────────────────────────
+const menuToggle = document.getElementById('menu-toggle');
+const mobileMenu = document.getElementById('mobile-menu');
+menuToggle.addEventListener('click', () => {
+  mobileMenu.classList.toggle('open');
+  const icon = menuToggle.querySelector('i');
+  icon.classList.toggle('fa-bars');
+  icon.classList.toggle('fa-xmark');
+});
+
+// Close mobile menu on link click
+document.querySelectorAll('.mobile-nav-link').forEach(link => {
+  link.addEventListener('click', () => {
+    mobileMenu.classList.remove('open');
+    const icon = menuToggle.querySelector('i');
+    icon.classList.add('fa-bars');
+    icon.classList.remove('fa-xmark');
+  });
+});
+
+// ── AOS-like scroll animations ─────────────────
+const aosObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting) {
+      // Stagger delay based on sibling index
+      const siblings = entry.target.parentElement
+        ? [...entry.target.parentElement.querySelectorAll('[data-aos]')]
+        : [];
+      const idx = siblings.indexOf(entry.target);
+      const delay = Math.min(idx * 80, 400);
+      setTimeout(() => {
+        entry.target.classList.add('aos-animate');
+      }, delay);
+      aosObserver.unobserve(entry.target);
+    }
+  });
+}, {
+  threshold: 0.12,
+  rootMargin: '0px 0px -40px 0px'
+});
+
+document.querySelectorAll('[data-aos]').forEach(el => aosObserver.observe(el));
+
+// ── Smooth Scroll for all anchor links ─────────
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', (e) => {
+    const targetId = link.getAttribute('href');
+    if (targetId === '#') return;
+    const target = document.querySelector(targetId);
+    if (target) {
+      e.preventDefault();
+      const offset = 64; // header height
+      const top = target.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top, behavior: 'smooth' });
+    }
+  });
+});
+
+// ── Active nav highlight ────────────────────────
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('nav a[href^="#"]');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(sec => {
+    if (window.scrollY >= sec.offsetTop - 100) current = sec.getAttribute('id');
+  });
+  navLinks.forEach(link => {
+    link.classList.remove('text-brand-red');
+    if (link.getAttribute('href') === '#' + current) {
+      link.classList.add('text-brand-red');
+    }
+  });
+}, { passive: true });
+</script>
+
+</body>
+</html>
